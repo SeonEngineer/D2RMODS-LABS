@@ -2,7 +2,7 @@
     "type": "CharacterDifficultyModal", "name": "CharacterDifficultyModal",
     "fields": {
         "anchor": { "x": 0.5, "y": 0.5 },
-        "defaultWidget": "Normal",
+        "defaultWidget": "Hell",
     },
     "children": [
         {
