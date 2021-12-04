@@ -7,11 +7,11 @@ Created on Wed Oct 27 17:51:17 2021
 import json
 
 #내가쓰던거
-path_myUi = r"my_ui.json"
+path_myUi = r"data\my_ui.json"
 #새로운 버전
-path_D2R_patch = r"ui_patched.json"
+path_D2R_patch = r"data\ui_patched.json"
 #출력될곳
-path_export = r"ui.json"
+path_export = r"data\ui_export.json"
 
 data1 = []
 data2 = []
@@ -43,7 +43,7 @@ with open(path_export, 'w', encoding="UTF-8-sig") as f_org:
                 value = value.replace('\uE01D','\\uE01D')
             if key == 'id':
                 f_org.write('    "%s": %s,\n' % (key, value))
-            elif key == 'zhCN':
+            elif key == list(datas)[-1]:
                 f_org.write('    "%s": "%s"\n' % (key, value))
             else:
                 f_org.write('    "%s": "%s",\n' % (key, value))
