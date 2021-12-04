@@ -41,7 +41,6 @@ with open(path_export, 'w', encoding="UTF-8-sig") as f_org:
                 value = value.replace('\n','\\n')
                 value = value.replace('\"','\\"')
                 value = value.replace('\uE01D','\\uE01D')
-                #value = value.replace('\\','\\\\')
             if key == 'id':
                 f_org.write('    "%s": %s,\n' % (key, value))
             elif key == 'zhCN':
